@@ -40,12 +40,12 @@ pacstrap /mnt base base-devel linux linux-firmware nano
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-nano /mnt/etc/fstab
+less /mnt/etc/fstab
 
 arch-chroot /mnt
 
 
-ln -sf /usr/share/zoneInfo/regionCity /etc/localtime
+ln -sf /usr/share/America/Caracas /etc/localtime
 
 hwclock --systohc
 
